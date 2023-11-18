@@ -1,57 +1,31 @@
-<mat-card class="example-card" style="margin: 100px;">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
-
-
-
-<section>
-  <div class="example-label">Stroked</div>
-  <div class="example-button-row">
-    <button mat-stroked-button matTooltip="Basic Button ">Basic</button>
-    <button mat-stroked-button color="primary">Primary</button>
-    <button mat-stroked-button color="accent">Accent</button>
-    <button mat-stroked-button color="warn">Warn</button>
-    <button mat-stroked-button disabled>Disabled</button>
-    <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
+<div class="wrapper">
+  <div>
+    Dark Mode
+    <mat-slide-toggle color="primary" [checked]="isLightMode" (change)="toggle($event)"></mat-slide-toggle>
+    Light Mode
   </div>
-</section>
 
+  <!-- Everything below is just example content -->
 
-<section>
-  <div class="example-label">Icon</div>
-  <div class="example-button-row">
-    <div class="example-flex-container">
-      <button  mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-        <mat-icon>more_vert</mat-icon>
-      </button>
-      <button matTooltip="Home " mat-icon-button color="primary" aria-label="Example icon button with a home icon">
-        <mat-icon>home</mat-icon>
-      </button>
-      <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button  mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
-        <mat-icon >open_in_new</mat-icon>
-      </button>
-    </div>
-  </div>
-</section>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>@rashed</mat-card-title>
+      <mat-card-subtitle>Beautiful bangladesh</mat-card-subtitle>
+    </mat-card-header>
+    <img style="padding: 20px;" mat-card-image
+      src="https://cdn.pixabay.com/photo/2017/08/15/13/34/natural-2643941_1280.jpg" alt="Photo of a Shiba Inu" />
+    <mat-card-content>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries,
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="card-footer">
+      <button mat-raised-button>Like</button>
+      <button mat-raised-button color="primary">Share</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
